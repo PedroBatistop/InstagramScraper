@@ -494,3 +494,7 @@ Response:
   "show_qr_modal": boolean
 }
 ```
+
+## Agradecimentos, Doações e Suporte  
+- [Doações](https://github.com/PedroBatistop/InstagramScraper#:~:text=Sponsor%20this%20project) - Esse projeto é mantido de graça e não possui foco lucrativo, doe se você puder ❤️  
+- Agradeço do meu coração a todos!  

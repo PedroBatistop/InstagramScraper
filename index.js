@@ -18,10 +18,10 @@ function bestQuality(post) {
         console.log("error: media_type not found");
       }
     }
-  } else if (media.media_type == 2) {
-    bestQualityPost.push(media.video_versions[0].url);
-  } else if (media.media_type == 1) {
-    bestQualityPost.push(media.image_versions2.candidates[0].url);
+  } else if (post.items[0].media_type == 2) {
+    bestQualityPost.push(post.items[0].video_versions[0].url);
+  } else if (post.items[0].media_type == 1) {
+    bestQualityPost.push(post.items[0].image_versions2.candidates[0].url);
   } else {
     console.log("error: media_type not found");
   }

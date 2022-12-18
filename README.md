@@ -14,6 +14,10 @@ From [npm](https://www.npmjs.com/package/@pedrobatistop/instagramscraper)
 
 `npm i @pedrobatistop/instagramscraper`
 
+### looking for another language?  
+  
+ * [Português](https://github.com/PedroBatistop/InstagramScraper/blob/main/.readme/pt/README.md)
+
 #### Authentication
 
 You must login to see private posts or profiles data.
@@ -494,3 +498,7 @@ Response:
   "show_qr_modal": boolean
 }
 ```
+
+## Thanks, Donations and Support
+- [Donations](https://github.com/PedroBatistop/InstagramScraper#:~:text=Sponsor%20this%20project) - This project is maintained for free and has no profit focus, donate if you can ❤️
+- I thank everyone!
