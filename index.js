@@ -10,18 +10,22 @@ function bestQuality(post) {
   let bestQualityPost = [];
   if (post.items[0].media_type == 8) {
     for (let media of post.items[0].carousel_media) {
+      let pushPost = {};
       if (media.media_type == 2) {
-        bestQualityPost.push(media.video_versions[0].url);
+        pushPost["type"] = "video";
+        pushPost["url"] = media.video_versions[0].url;
       } else if (media.media_type == 1) {
-        bestQualityPost.push(media.image_versions2.candidates[0].url);
+        pushPost["type"] = "image";
+        pushPost["url"] = media.image_versions2.candidates[0].url;
       } else {
         console.log("error: media_type not found");
       }
+      bestQualityPost.push(pushPost);
     }
   } else if (post.items[0].media_type == 2) {
-    bestQualityPost.push(post.items[0].video_versions[0].url);
+    bestQualityPost.push({ type: "video", url: post.items[0].video_versions[0].url });
   } else if (post.items[0].media_type == 1) {
-    bestQualityPost.push(post.items[0].image_versions2.candidates[0].url);
+    bestQualityPost.push({ type: "image", url: post.items[0].image_versions2.candidates[0].url });
   } else {
     console.log("error: media_type not found");
   }
