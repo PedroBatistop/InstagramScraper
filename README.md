@@ -1,10 +1,7 @@
 <p align="center">  
-	<h1 align="center">Instagram Scraper</h1>  
+	<h1 align="center">Instagram Scraper</h1>
+   A simple JS Instagram Scraper
 </p>
-
-# InstagramScraper
-
- A simple JS Instagram Scraper
 
 ### Prerequisites
 
@@ -90,7 +87,7 @@ If authentication is successfull, you'll get the form data from `accounts/edit` 
 }
 ```
 
-If your session ID is invalid, you'll get error.
+If your cookie is invalid, you'll get error.
 
 ## Functions
 

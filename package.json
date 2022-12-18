@@ -14,5 +14,23 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^1.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PedroBatistop/InstagramScraper.git"
+  },
+  "homepage": "https://github.com/PedroBatistop/InstagramScraper#readme",
+  "funding": [
+    {
+      "type": "paypal",
+      "url": "https://www.paypal.com/donate/?business=NA2NLLH7YE7VN&no_recurring=0&currency_code=BRL"
+    },
+    {
+      "type": "picpay",
+      "url": "https://app.picpay.com/user/pedrobatistop"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/PedroBatistop/InstagramScraper/issues"
   }
 }
