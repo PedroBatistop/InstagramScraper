@@ -1,22 +1,22 @@
 <p align="center">  
 	<h1 align="center">Instagram Scraper</h1>
-   A simple JS Instagram Scraper
+   Um simples Instagram Scraper em JS.
 </p>
 
-### Prerequisites
+### Pré-requisitos
 
 - NodeJS
 - NPM
 
-### Install
+### Instalação
 
-From [npm](https://www.npmjs.com/package/@pedrobatistop/instagramscraper)
+De [npm](https://www.npmjs.com/package/@pedrobatistop/instagramscraper)
 
 `npm i @pedrobatistop/instagramscraper`
 
-#### Authentication
+#### Autenticação
 
-You must login to see private posts or profiles data.
+Você deve fazer login para ver postagens privadas ou dados de perfis.
 
 ### Usage
 
@@ -25,27 +25,27 @@ const Insta = require('@pedrobatistop/instagramscraper');
 const instgaram = new insta();
 ```
 
-##### Getting your cookies
+##### Como obter seus cookies
 
-- Go to [instagram.com](https://www.instagram.com/);
-- Login on your account;
-- Open development tools *(`Ctrl` + `Shift` + `I`)*;
-- Go to the `Network` tab;
-- Reload the page;
-- Get the first request called `www.instagram.com`;
-- Open the `headers` tab;
-- Search for `Request headers`;
-- Right click on `cookies` value and copy;
+- Vá para [instagram.com](https://www.instagram.com/);
+- Entre na sua conta;
+- Acesse as ferramentas de desenvolvimento *(`Ctrl` + `Shift` + `I`)*;
+- Vá para a aba `Network`;
+- Recarregue a página;
+- Abra o primeiro request chamado `www.instagram.com`;
+- Abra a aba `headers`;
+- Pesquise por `Request headers`;
+- Clique com o botão direito em `cookies` e copie o valor;
 
-##### Getting your user-agent
+##### Como obter seu user-agent
 
-- Go to [google.com](https://www.google.com.br/);
-- Search for `what's my user-agent`;
-- Or simply go to this [link](https://www.google.com.br/search?&q=what%27s+my+user+agent);
-- Copy your user-agent;
+- Vá para [google.com](https://www.google.com.br/);
+- Pesquise por `what's my user-agent`;
+- Ou vá para esse [link](https://www.google.com.br/search?&q=what%27s+my+user+agent);
+- Copie o seu user-agent;
 
 
-##### Code
+##### Código
 
 ```js
 instgaram.login(cookies, userAgent)
@@ -53,7 +53,7 @@ instgaram.login(cookies, userAgent)
 	.catch(err => console.error(err));
 ```
 
-If authentication is successfull, you'll get the form data from `accounts/edit` :
+Se a autenticação for bem-sucedida, você obterá os dados do formulário de `accounts/edit` :
 
 ```json
 {
@@ -87,11 +87,11 @@ If authentication is successfull, you'll get the form data from `accounts/edit` 
 }
 ```
 
-If your cookie is invalid, you'll get error.
+Se o seu cookie for inválido, você receberá um erro.
 
-## Functions
+## Funções
 
-1. - getProfile - Retrieves information about a profile.
+1. - getProfile - Pega informações de um perfil.
 
 ```js
 instgaram.getProfile(username)
@@ -191,7 +191,7 @@ Response:
 }
 ```
 
-2. - getPost - Retrieve post data.
+2. - getPost - Obtem dados de um post.
 
 ```js
 var link = 'https://www.instagram.com/pedrobatistop/' || 'www.instagram.com/pedrobatistop/' || 'pedrobatistop'
@@ -283,9 +283,9 @@ Response:
 }
 ```
 
-3. - getAllPosts - Retrieves all posts from a profile.
+3. - getAllPosts - Pega todas as postagens de um perfil.
 
-Use this function carefully so your account doesn't get banned, this makes a request for each `maxPosts` posts from a profile.
+Use esta função com cuidado para que sua conta não seja banida, isso faz uma solicitação para cada postagem `maxPosts` de um perfil.
 
 ```js
 instgaram.getAllPosts(username, maxPosts)
@@ -296,12 +296,12 @@ instgaram.getAllPosts(username, maxPosts)
 Response:
 
 ```json
-Same as getProfile
+O mesmo que getProfile
 ```
 
-4. - getAccountNotifications - Get authenticated account notifications.
+4. - getAccountNotifications - Receba notificações da conta autenticada.
 
-You must be logged to use this feature.
+Você deve estar logado para usar este recurso.
 
 ```js
 instgaram.getAccountNotifications()
@@ -331,7 +331,7 @@ Response:
 }
 ```
 
-5. - getPostsByHashtag - Retrieves posts related to the hashtag.
+5. - getPostsByHashtag - Pega postagens relacionadas a uma hashtag.
 
 ```js
 instgaram.getPostsByHashtag(hashtag)
@@ -392,7 +392,7 @@ Response:
 }
 ```
 
-6. - search - Search profiles, locations and hashtags on Instagram.
+6. - search - Pesquise perfis, localizações e hashtags no Instagram.
 
 ```js
 instgaram.search(query)
@@ -423,9 +423,9 @@ Response:
 }
 ```
 
-7. - getLocationById - Get posts related to the location ID.
+7. - getLocationById - Obtenha postagens relacionadas ao ID da localização.
 
-You can get the ID by searching the location using `instgaram.search(query)`.
+Você pode obter o ID pesquisando a localização usando `instgaram.search(query)`.
 
 ```js
 instgaram.getLocationById(id)
